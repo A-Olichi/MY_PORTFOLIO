@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COURS HTML/CSS – Sommaire</title>
+  <style>
+    
+    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+
+    
+    .app {
+      display: flex;
+      height: 100vh;           
+      width: 100vw;            
+      overflow: hidden;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    
+    .sidebar {
+      width: 22%;             
+      min-width: 220px;
+      border-right: 1px solid #eee;
+      background: #ffd3dc;     
+    }
+    .sidebar iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+   
+    .content {
+      flex: 1;
+      background: #E427F5;     
+      position: relative;
+    }
+    .content iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      background: #E427F5;
+    }
+
+  
+    .back-link {
+      position: fixed;
+      right: 14px;
+      bottom: 12px;
+      z-index: 10;
+      background: #000;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: .9;
+    }
+    .back-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar">
+      <iframe src="sommaire.html" name="f1" title="Sommaire"></iframe>
+    </div>
+    <div class="content">
+      <iframe src="contenu.html" name="f2" title="Contenu"></iframe>
+    </div>
+  </div>
+
+  
+  <a class="back-link" href="../portfolio.html">Retour au Portfolio</a>
+</body>
+</html>

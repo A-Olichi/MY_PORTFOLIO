@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous</title>
+  <style>
+   
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: #0d1b66;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #e1ec65;
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    button {
+      background-color: #27F5CF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #20d8b8;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #0d1b66;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.9;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+      background: #2739a0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contactez-nous</h1>
+
+  <form>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom">
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email">
+
+    <label for="tel">Téléphone :</label>
+    <input type="tel" id="tel" name="tel">
+
+    <label for="msg">Message :</label>
+    <textarea id="msg" name="msg"></textarea>
+
+    <div class="buttons">
+      <button type="submit">Envoyer</button>
+      <button type="reset">Retour</button>
+    </div>
+  </form>
+
+  <a href="../portfolio.html" class="back-link">Retour au Portfolio</a>
+
+</body>
+</html>

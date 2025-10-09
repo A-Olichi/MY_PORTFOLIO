@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'inscription</title>
+  <style>
+    /* Style global */
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    form {
+      background-color: #ffffffc9;
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #d7f7ef;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #b2f5e2;
+    }
+
+    input, textarea, select {
+      width: 90%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button, input[type="submit"], input[type="reset"] {
+      background-color: #27F5CF;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      transition: all 0.2s ease;
+    }
+
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #20d8b8;
+      transform: scale(1.05);
+    }
+
+    /* Lien retour fixe bas-droite */
+    a.back-link {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.9;
+      transition: 0.3s;
+    }
+
+    a.back-link:hover {
+      opacity: 1;
+      background: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>FORMULAIRE D'INSCRIPTION</h1>
+
+  <form>
+    <table>
+      <tr><td><label>Nom</label></td><td><input type="text" name="t1"></td></tr>
+      <tr><td><label>Prénom</label></td><td><input type="text" name="t2"></td></tr>
+      <tr><td><label>Mot de passe</label></td><td><input type="password" name="t3"></td></tr>
+      <tr><td><label>Adresse</label></td><td><textarea cols="30" rows="3"></textarea></td></tr>
+      <tr><td><label>Ville</label></td><td>
+        <select>
+          <option>Paris</option>
+          <option>Créteil</option>
+          <option>Nice</option>
+        </select>
+      </td></tr>
+      <tr><td><label>Situation</label></td><td>
+        Boursier <input type="radio" name="r1">
+        Alternant <input type="radio" name="r1">
+        Aucun <input type="radio" name="r1">
+      </td></tr>
+      <tr><td><label>Centres d'intérêt</label></td><td>
+        Lecture <input type="checkbox" name="c1">
+        Sport <input type="checkbox" name="c2">
+        Musique <input type="checkbox" name="c3">
+      </td></tr>
+    </table>
+
+    <button type="button">Enregistrer</button>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Réinitialiser">
+  </form>
+
+  <a href="../portfolio.html" class="back-link">Retour au Portfolio</a>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire d'inscription</title>
+<link href="mission3.css" rel="stylesheet">
+</head>
+<body>
+
+<h2>Formulaire d'inscription</h2>
+
+<p><a href="mission3.html">Retour au Sommaire</a></p>
+
+<form action="">
+<table border="0">
+<tr>
+<td><label for="pseudo">Pseudo*</label></td>
+<td><input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" maxlength="20"></td>
+</tr>
+<tr>
+<td><label for="mdp">Mot de passe</label></td>
+<td><input type="password" id="mdp" name="mdp" maxlength="20"></td>
+</tr>
+<tr>
+<td><label for="prenom">Prénom</label></td>
+<td><input type="text" id="prenom" name="prenom" placeholder="Votre Prénom" maxlength="30"></td>
+</tr>
+<tr>
+<td><label for="email">Email</label></td>
+<td><input type="email" id="email" name="email" placeholder="exemple@mail.com"></td>
+</tr>
+<tr>
+<td><label for="avatar">Avatar</label></td>
+<td><input type="file" id="avatar" name="avatar"></td>
+</tr>
+<tr>
+<td><label for="pays">Pays</label></td>
+<td>
+<select id="pays" name="pays">
+<option>France</option>
+<option>Espagne</option>
+<option>Italie</option>
+<option>Allemagne</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Quels sont vos fruits préférés ?</td>
+<td>
+<input type="checkbox" name="fruit" value="orange">Orange
+<input type="checkbox" name="fruit" value="fraise">Fraise
+<input type="checkbox" name="fruit" value="poire">Poire
+</td>
+</tr>
+<tr>
+<td>Civilité</td>
+<td>
+<input type="radio" name="civilite" value="homme">Homme
+<input type="radio" name="civilite" value="femme">Femme
+</td>
+</tr>
+<tr>
+<td><label for="ville">Ville</label></td>
+<td><input type="text" id="ville" name="ville" placeholder="Votre ville"></td>
+</tr>
+<tr>
+<td><label for="cp">Code postal</label></td>
+<td><input type="number" id="cp" name="cp" placeholder="75000"></td>
+</tr>
+<tr>
+<td><label for="adresse">Adresse</label></td>
+<td><textarea id="adresse" name="adresse" rows="4" cols="40"></textarea></td>
+</tr>
+<tr>
+<td><label for="date">Date de naissance</label></td>
+<td><input type="date" id="date" name="date"></td>
+</tr>
+<tr>
+<td><label for="jauge">Jauge</label></td>
+<td><input type="range" id="jauge" name="jauge" min="0" max="100"></td>
+</tr>
+<tr>
+<td><label for="tel">Téléphone</label></td>
+<td><input type="tel" id="tel" name="tel" placeholder="0600000000" maxlength="10"></td>
+</tr>
+<tr>
+<td><label for="recherche">Recherche</label></td>
+<td><input type="search" id="recherche" name="recherche"></td>
+</tr>
+<tr>
+<td><label for="url">URL</label></td>
+<td><input type="url" id="url" name="url" placeholder="https://"></td>
+</tr>
+<tr>
+<td><label for="couleur">Couleur</label></td>
+<td><input type="color" id="couleur" name="couleur"></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" value="Valider">
+</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
