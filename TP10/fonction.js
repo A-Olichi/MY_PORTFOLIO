@@ -1,3 +1,5 @@
+
+
 function calcul_moyenne() {
   var n1 = prompt("Donner la première note :");
   var n2 = prompt("Donner la deuxième note :");
