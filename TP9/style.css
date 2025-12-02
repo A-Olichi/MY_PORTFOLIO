@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
 .hero {
     height: 100vh;
-    background: url("img/ma-voiture.jpg") center/cover no-repeat;
+    background: url("img/ma porsche.jpg") center/cover no-repeat;
     position: relative;
     color: white;
 }
@@ -13,7 +14,8 @@ html, body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.25);
+    background: rgba(0, 0, 0, .45);
+    z-index: 1;
 }
 
 .hero .content {
@@ -24,6 +26,15 @@ html, body {
 .hero h1 {
     font-size: 3.4rem;
     font-weight: 700;
+}
+
+.hero .content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    margin-top: -5px;
 }
 
 .navbar-custom {
