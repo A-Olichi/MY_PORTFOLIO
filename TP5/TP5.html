@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +28,7 @@
       background-color: #ffffffc9;
       padding: 25px 35px;
       border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
       text-align: center;
       width: 80%;
       max-width: 600px;
@@ -51,7 +52,9 @@
       background-color: #b2f5e2;
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
       width: 90%;
       padding: 8px;
       border: 1px solid #ccc;
@@ -59,7 +62,9 @@
       font-size: 14px;
     }
 
-    button, input[type="submit"], input[type="reset"] {
+    button,
+    input[type="submit"],
+    input[type="reset"] {
       background-color: #27F5CF;
       border: none;
       padding: 10px 20px;
@@ -104,27 +109,48 @@
 
   <form>
     <table>
-      <tr><td><label>Nom</label></td><td><input type="text" name="t1"></td></tr>
-      <tr><td><label>Prénom</label></td><td><input type="text" name="t2"></td></tr>
-      <tr><td><label>Mot de passe</label></td><td><input type="password" name="t3"></td></tr>
-      <tr><td><label>Adresse</label></td><td><textarea cols="30" rows="3"></textarea></td></tr>
-      <tr><td><label>Ville</label></td><td>
-        <select>
-          <option>Paris</option>
-          <option>Créteil</option>
-          <option>Nice</option>
-        </select>
-      </td></tr>
-      <tr><td><label>Situation</label></td><td>
-        Boursier <input type="radio" name="r1">
-        Alternant <input type="radio" name="r1">
-        Aucun <input type="radio" name="r1">
-      </td></tr>
-      <tr><td><label>Centres d'intérêt</label></td><td>
-        Lecture <input type="checkbox" name="c1">
-        Sport <input type="checkbox" name="c2">
-        Musique <input type="checkbox" name="c3">
-      </td></tr>
+      <tr>
+        <td><label>Nom</label></td>
+        <td><input type="text" name="t1"></td>
+      </tr>
+      <tr>
+        <td><label>Prénom</label></td>
+        <td><input type="text" name="t2"></td>
+      </tr>
+      <tr>
+        <td><label>Mot de passe</label></td>
+        <td><input type="password" name="t3"></td>
+      </tr>
+      <tr>
+        <td><label>Adresse</label></td>
+        <td><textarea cols="30" rows="3"></textarea></td>
+      </tr>
+      <tr>
+        <td><label>Ville</label></td>
+        <td>
+          <select>
+            <option>Paris</option>
+            <option>Créteil</option>
+            <option>Nice</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Situation</label></td>
+        <td>
+          Boursier <input type="radio" name="r1">
+          Alternant <input type="radio" name="r1">
+          Aucun <input type="radio" name="r1">
+        </td>
+      </tr>
+      <tr>
+        <td><label>Centres d'intérêt</label></td>
+        <td>
+          Lecture <input type="checkbox" name="c1">
+          Sport <input type="checkbox" name="c2">
+          Musique <input type="checkbox" name="c3">
+        </td>
+      </tr>
     </table>
 
     <button type="button">Enregistrer</button>
@@ -132,8 +158,25 @@
     <input type="reset" value="Réinitialiser">
   </form>
 
-  <a href="../index.html"class="back-link">Retour au Portfolio</a>
+  <a href="../index.html" style="
+       position: absolute;
+       top: 20px;
+       left: 20px;
+       background: rgba(0,0,0,0.55);
+       color: #fff;
+       padding: 8px 14px;
+       border-radius: 6px;
+       text-decoration: none;
+       font-size: 14px;
+       font-weight: 600;
+       backdrop-filter: blur(4px);
+       z-index: 999;
+   ">
+    ← Retour à l'acueil Portfolio
+  </a>
+
+
 
 </body>
-</html>
 
+</html>
